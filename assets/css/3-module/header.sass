@@ -1,0 +1,74 @@
+nav
+  background-color: $basicColor
+
+.nav__container
+  max-width: 1200px
+  height: 6vh
+  height: 40px
+  font-size: 1rem
+  margin: 0 auto
+  padding: 0 2em
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.nav__items
+  display: flex
+
+.nav__link
+  font-size: 1.563em
+  font-size: 1.25em
+  padding: 0.1em 0
+  margin: 0 0.512em
+  position: relative
+  color: grey
+  color: white
+  &:hover
+    //color: black
+  &:before
+    content: ""
+    background-color: white
+    position: absolute
+    // background-color: #000
+    width: 100%
+    height: 0.08em
+    //bottom: 0
+    left: 0
+    visibility: hidden
+    transform: scaleX(0)
+    transition: all 0.2s ease-in-out 0s
+  &:hover:before
+    visibility: visible
+    transform: scale(1)
+
+.banner
+  height: 30vh
+  min-height: 200px
+  background:
+    image: url("/assets/img/hero_3.jpeg")
+    size: cover
+    //attachment: fixed
+    position: 50% 50%
+    repeat: no-repeat
+
+.banner__logo
+  background-color: white
+  width: 35vh
+  height: 35vh
+  min-height: 250px
+  min-width: 250px
+  position: absolute
+  top: 20px
+  left: 40px
+  border: 1px solid black
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  @media(max-width: 700px)
+    display: none
+
+.header__greenStripe
+  height: 40px
+  background-color: $basicColor
+  opacity: 0.5
