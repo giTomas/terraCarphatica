@@ -1,11 +1,10 @@
 
 @import "0-tools/reset";
 @import "0-tools/box-sizing";
-@import "1-base/base";
 @import "1-base/vars";
+@import "1-base/base";
 @import "2-layout/layout";
 @import "3-module/header";
-
 @import "3-module/footer";
-
+@import "3-module/news";
 @import "4-state/state";

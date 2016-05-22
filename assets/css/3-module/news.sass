@@ -1,0 +1,41 @@
+section
+
+
+.news__container, .coworkers__container
+  width: $pageWidth
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  //background-color: $backgroundColor
+
+.news__itemContainer
+  width: calc(25% - 1em)
+  display: flex
+  margin: 0.5em 0
+  padding: 1em
+  line-height: 1.2
+  flex-wrap: wrap
+  justify-content: center
+  cursor: pointer
+  transition: box-shadow 0.1s ease-in 0s
+  &:hover
+    box-shadow: 0 0 2px $titleColor
+    background-color: $backgroundColor
+    transition: box-shadow 0.1s ease-out 0.1s
+    .news__itemBtn
+      opacity: 1
+      transition: opacity 0.9s ease-out 0.1s
+
+.news__itemTitle
+  font-size: 1.563rem
+  //padding-top: 1em
+
+.news_itemDate
+  padding-bottom: 0.5em
+
+.news__itemContent
+  font-size: 1rem
+
+.news__itemBtn
+  opacity: 0
+  transition: opacity 0.1s ease-in 0s

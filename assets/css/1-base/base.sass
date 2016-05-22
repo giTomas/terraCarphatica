@@ -1,14 +1,14 @@
+body
+  background-color: $basicColor
+
 a
   display: block
   text-decoration: none
-
   transition: color 0.2s ease
   &:hover,
   &:active,
   &:focus
     outline: none
-
-
 
 img
   display: block
@@ -17,3 +17,31 @@ img
 :root
   font-family: sans-serif
   font-size: 12px
+  color: $textColor
+
+//typography
+
+h2
+  width: 100%
+  font-size: 3.815rem
+  padding: 1em 0.5em
+  color: $titleColor
+  font-weight: bold
+  letter-spacing: 0.1em
+  text-align: center
+
+h3, h4, p
+  width: 100%
+
+h3
+  color: $titleColor
+
+.btn
+  border: 1px solid $hoverBackground
+  margin-top: 1em
+  padding: 0.4em 1em
+  transition: 0.1s ease-out 0.1s
+  color: $textColor
+  &:hover
+    background-color: $hoverBackground
+    color: $hoverColor

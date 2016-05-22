@@ -1,51 +1,97 @@
-nav
-  background-color: $basicColor
+header
+  box-shadow: 0 3px 3px grey
+  background-color: $headerColor
+
+
+
 
 .nav__container
-  max-width: 1200px
-  height: 6vh
+  width: $pageWidth
   height: 40px
   font-size: 1rem
   margin: 0 auto
-  padding: 0 2em
+  //padding: 0 2em
   display: flex
   align-items: center
   justify-content: flex-end
 
 .nav__items
   display: flex
+  height: 100%
+
+.nav__link, .nav__searchIcon
+  height: 100%
+  display: flex
+  align-items: center
 
 .nav__link
-  font-size: 1.563em
+  //font-size: 1.563em
   font-size: 1.25em
+  font-weight: bold
+  font-variant: small-caps
   padding: 0.1em 0
   margin: 0 0.512em
   position: relative
-  color: grey
-  color: white
+  color: $linksColor
+  //color: white
   &:hover
     //color: black
   &:before
     content: ""
-    background-color: white
+    background-color: $linksColor
     position: absolute
     // background-color: #000
     width: 100%
-    height: 0.08em
-    //bottom: 0
-    left: 0
+    height: 0.25em
+    bottom: 0
+    //left: 0
     visibility: hidden
     transform: scaleX(0)
-    transition: all 0.2s ease-in-out 0s
+    transition: all 0.2s ease-out 0.1s
   &:hover:before
     visibility: visible
-    transform: scale(1)
+    transform: scaleX(1)
+    transition: all 0.2s ease-in 0.1s
+
+.nav__searchIcon
+  position: relative
+  svg
+    fill: $linksColor
+
+.nav-search
+  padding-left: 1.25em
+  //position: relative
+  cursor: pointer
+
+  &:hover
+    .nav__searchForm
+      visibility: visible
+      transform: scaleY(1)
+      //right: 0
+      transition-delay: 0s
+      //display: block
+
+.nav__searchForm
+  //visibility: hidden
+  transform-origin: top
+  transform: scaleY(0)
+  padding: 0.8em
+  background-color: rgba($headerColor, 0.35)
+  //border-top: 5px solid rgba($basicColor, 0.5)
+  position: absolute
+  top: 100%
+  right: 0
+  transition: 0.1s 0.5s
+  form
+    display: flex
+  button
+    margin-left: 0.8em
 
 .banner
-  height: 30vh
-  min-height: 200px
+  //height: 30vh
+  height: 200px
   background:
-    image: url("/assets/img/hero_3.jpeg")
+    image: url("/assets/img/bg1.jpeg")
     size: cover
     //attachment: fixed
     position: 50% 50%
@@ -53,15 +99,18 @@ nav
 
 .banner__logo
   background-color: white
-  width: 35vh
-  height: 35vh
-  min-height: 250px
-  min-width: 250px
+  //width: 35vh
+  //height: 35vh
+  min-height: 240px
+  min-width: 240px
+  //background-image: url('assets/svg/tc-logo.svg')
+  //background-position: 50% 50%
   position: absolute
-  top: 20px
-  left: 40px
-  border: 1px solid black
+  top: -20px
+  left: -120px
+  border: 4px solid black
   border-radius: 50%
+  z-index: 999
   display: flex
   justify-content: center
   align-items: center
@@ -70,5 +119,10 @@ nav
 
 .header__greenStripe
   height: 40px
-  background-color: $basicColor
-  opacity: 0.5
+  //background-color: $basicColor
+  //opacity: 0.5
+
+.banner__logoContainer
+  position: relative
+  width: $pageWidth
+  margin: 0 auto

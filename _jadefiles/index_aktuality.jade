@@ -1,0 +1,19 @@
+mixin news(title, content, date,href)
+  .news__itemContainer
+    h3.news__itemTitle= title 
+    h4.news_itemDate= date
+    p.news__itemContent= content
+    a.btn.news__itemBtn(href= href) Čítať ďalej
+  
+
+section
+  .news__container
+    h2.news__title  Aktuality
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016', '/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    
