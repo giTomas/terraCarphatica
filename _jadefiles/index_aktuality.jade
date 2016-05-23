@@ -1,19 +1,24 @@
-mixin news(title, content, date,href)
+mixin news(src, title, content, date, href)
   .news__itemContainer
-    h3.news__itemTitle= title 
-    h4.news_itemDate= date
-    p.news__itemContent= content
-    a.btn.news__itemBtn(href= href) Čítať ďalej
-  
+    img(src= src)
+    .news__contentContainer
+      a(href= href)
+        h3.news__itemTitle= title 
+        h4.news_itemDate= date
+        p.news__itemContent= content
+        a.btn.news__itemBtn(href= href) Čítať ďalej
+
 
 section
   .news__container
     h2.news__title  Aktuality
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016', '/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    +news('Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
-    
+    +news('../assets/img/nature1.jpeg','Lorem ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016', '/')
+    +news('../assets/img/nature2.jpeg','Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('../assets/img/anim2.jpeg','Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna.','21.5.2016','/')
+    +news('../assets/img/anim5.jpeg','Vivamus ultricies lacinia felis ac sollicitudin', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('../assets/img/anim6.jpeg','Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.','21.5.2016','/')
+    +news('../assets/img/5.jpeg','Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('../assets/img/anim1.jpeg','Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.','21.5.2016','/')
+    +news('../assets/img/nature3.jpeg','Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.','21.5.2016','/')
+  .news__btnContainer
+    a.btn.news__allNews(href="/") Všetky aktuality

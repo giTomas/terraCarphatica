@@ -2,11 +2,8 @@ header
   box-shadow: 0 3px 3px grey
   background-color: $headerColor
 
-
-
-
 .nav__container
-  width: $pageWidth
+  //width: $pageWidth
   height: 40px
   font-size: 1rem
   margin: 0 auto
@@ -17,22 +14,22 @@ header
 
 .nav__items
   display: flex
-  height: 100%
 
-.nav__link, .nav__searchIcon
+.nav__items,
+.nav__item,
+.nav__link,
+.nav__searchIcon
   height: 100%
-  display: flex
-  align-items: center
 
 .nav__link
-  //font-size: 1.563em
   font-size: 1.25em
   font-weight: bold
   font-variant: small-caps
   padding: 0.1em 0
   margin: 0 0.512em
   position: relative
-  color: $linksColor
+  display: flex
+  align-items: center
   //color: white
   &:hover
     //color: black
@@ -53,8 +50,11 @@ header
     transform: scaleX(1)
     transition: all 0.2s ease-in 0.1s
 
+
 .nav__searchIcon
   position: relative
+  display: flex
+  align-items: center
   svg
     fill: $linksColor
 
@@ -66,22 +66,24 @@ header
   &:hover
     .nav__searchForm
       visibility: visible
-      transform: scaleY(1)
+      //transform: scaleY(1)
+      opacity: 1
       //right: 0
       transition-delay: 0s
       //display: block
 
 .nav__searchForm
-  //visibility: hidden
-  transform-origin: top
-  transform: scaleY(0)
+  visibility: hidden
+  //transform-origin: top
+  //transform: scaleY(0)
+  opacity: 0
   padding: 0.8em
   background-color: rgba($headerColor, 0.35)
   //border-top: 5px solid rgba($basicColor, 0.5)
   position: absolute
   top: 100%
   right: 0
-  transition: 0.1s 0.5s
+  transition: 0.2s 0.5s
   form
     display: flex
   button
@@ -96,6 +98,11 @@ header
     //attachment: fixed
     position: 50% 50%
     repeat: no-repeat
+
+.banner__logoContainer
+  position: relative
+  width: $pageWidth
+  margin: 0 auto
 
 .banner__logo
   background-color: white
@@ -121,8 +128,3 @@ header
   height: 40px
   //background-color: $basicColor
   //opacity: 0.5
-
-.banner__logoContainer
-  position: relative
-  width: $pageWidth
-  margin: 0 auto

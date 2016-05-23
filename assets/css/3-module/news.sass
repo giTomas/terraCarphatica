@@ -1,21 +1,26 @@
-section
-
-
-.news__container, .coworkers__container
+.news__container,
+.coworkers__container,
+.nav__container,
+.news__btnContainer
   width: $pageWidth
   margin: 0 auto
   display: flex
   flex-wrap: wrap
   //background-color: $backgroundColor
+  @media (max-width: 700px)
+    width: 80%
+  @media (max-width: 500px)
+    width: 95%
+
+.news__container
+  align-items: flex-start
+
+.news__btnContainer
+  justify-content: center
 
 .news__itemContainer
   width: calc(25% - 1em)
-  display: flex
-  margin: 0.5em 0
-  padding: 1em
-  line-height: 1.2
-  flex-wrap: wrap
-  justify-content: center
+  margin: 1em 0.5em
   cursor: pointer
   transition: box-shadow 0.1s ease-in 0s
   &:hover
@@ -24,18 +29,48 @@ section
     transition: box-shadow 0.1s ease-out 0.1s
     .news__itemBtn
       opacity: 1
-      transition: opacity 0.9s ease-out 0.1s
+      transition: opacity 1s ease-out 0.1s
+  @media (max-width: 1050px)
+    width: calc(50% - 1em)
+  @media (max-width: 400px)
+    width: calc(100% - 1em)
+  img
+    object-fit: cover
+
+.news__contentContainer
+  display: flex
+
+  padding: 0.5em
+  //line-height: 1.3
+  flex-wrap: wrap
+  justify-content: center
+  //align-items: flex-start
+
 
 .news__itemTitle
-  font-size: 1.563rem
+  font-size: 1.25rem
+  font-weight: bold
+  line-height: 1.1
+  //color: lightblue
   //padding-top: 1em
+  transition: all 0.2s ease-out 0.1s
+  &:hover
+    text-decoration: underline
 
 .news_itemDate
   padding-bottom: 0.5em
+  line-height: 1.1
 
 .news__itemContent
   font-size: 1rem
+  line-height: 1.3
 
 .news__itemBtn
   opacity: 0
   transition: opacity 0.1s ease-in 0s
+
+.news__allNews
+  font-size: 1.25em
+  margin-bottom: 2.5em
+  font-variant: small-caps
+  font-weight: bold
