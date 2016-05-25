@@ -1,0 +1,15 @@
+---
+layout: default-news
+---
+
+{% include page_header.html %}
+
+<main class="newsSubsite">
+  <div class="newsSubsite__container">
+    <h2 class="newsSubsite__title">{{ page.title }}</h2>
+    <h3 class="newsSubsite__date">{{ page.date | date: "%d/%m/%Y" }}</h3>
+    <div class="newsSubsite__content">
+      {{page.content}}
+    </div>
+  </div>
+</main>

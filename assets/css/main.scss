@@ -3,9 +3,13 @@
 @import "0-tools/box-sizing";
 @import "1-base/vars";
 @import "1-base/base";
+
 @import "2-layout/layout";
 @import "3-module/header";
 @import "3-module/footer";
 @import "3-module/news";
 @import "3-module/coworkers";
+@import "3-module/photogalleries";
+
+@import "3-module/newsCompleteList";
 @import "4-state/state";

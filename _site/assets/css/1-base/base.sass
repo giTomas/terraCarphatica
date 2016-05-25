@@ -11,7 +11,6 @@ a
   &:focus
     outline: none
 
-
 img
   display: block
   width: 100%
@@ -26,9 +25,12 @@ img
 h2
   width: 100%
   font-size: 2.441rem
-  padding: 1em 0.5em
+  padding: 0.5em
+  margin: 1em 0.5rem 0
   color: $titleColor
+  //background-color: $backgroundColor
   font-weight: bold
+  //box-shadow: $box-shadow
   //font-variant: small-caps
   letter-spacing: 0.05em
   text-align: center
@@ -40,11 +42,11 @@ h3
   color: $titleColor
 
 .btn
-  border: 1px solid $hoverBackground
-  margin-top: 1em
+  border: 1px solid $hoverColor
+  //margin-top: 1em
   padding: 0.4em 1em
-  transition: 0.1s ease-out 0.1s
-  color: $textColor
+  transition: 0.2s ease-out 0.1s
+  color: $hoverColor
   &:hover
-    background-color: $hoverBackground
-    color: $hoverColor
+    background-color: $hoverColor
+    color: $hoverColor2

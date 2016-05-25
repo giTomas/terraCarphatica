@@ -1,0 +1,14 @@
+
+<section>
+  <div class="news__container">
+    <h2 class="news__title">Všetky aktuality</h2>{% for news in site.categories.news %}
+    <div class="news__itemContainer"><img src="../assets/img/{{news.imgIndex}}" class="news__image"/><a href="{{news.url}}" class="news__contentContainer">
+        <h3 class="news__itemTitle">{{ news.title }} </h3>
+        <h4 class="news_itemDate">{{ news.date | date: "%d/%m/%Y"}}</h4>
+        <p class="news__itemContent">{{ news.excerpt_separator }}</p></a>
+      <ul class="news__tags">{% for tag in news.tags %}
+        <li><a href="../{{ tag }}" class="news__tag">{{ tag | replace:'-',' ' }}</a></li>{% endfor %}
+      </ul>
+    </div>{% endfor %}
+  </div>
+</section>

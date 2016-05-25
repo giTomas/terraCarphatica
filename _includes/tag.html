@@ -1,0 +1,14 @@
+
+<section>
+  <div class="news__container">
+    <h2 class="news__title">Projekty</h2>{% for tag in site.tags.Projekty %}
+    <div class="news__itemContainer"><img src="../assets/img/{{tag.imgIndex}}" class="news__image"/><a href="{{tag.url}}" class="news__contentContainer">
+        <h3 class="news__itemTitle">{{ tag.title }} </h3>
+        <h4 class="news_itemDate">{{ tag.date | date: "%d/%m/%Y"}}</h4>
+        <p class="news__itemContent">{{ tag.excerpt_separator }}</p></a>
+      <ul class="news__tags">{% for tag in tag.tags %}
+        <li><a href="../{{ tag }}" class="news__tag">{{ tag | replace:'-',' ' }}</a></li>{% endfor %}
+      </ul>
+    </div>{% endfor %}
+  </div>
+</section>

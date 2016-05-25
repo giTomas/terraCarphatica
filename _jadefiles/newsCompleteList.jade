@@ -1,0 +1,19 @@
+section
+  .news__container
+    h2.news__title Všetky aktuality
+
+    {% for news in site.categories.news %}
+    .news__itemContainer
+      img.news__image(src= "../assets/img/{{news.imgIndex}}")      
+      a.news__contentContainer(href= "{{news.url}}")
+        h3.news__itemTitle {{ news.title }} 
+        h4.news_itemDate {{ news.date | date: "%d/%m/%Y"}}
+        p.news__itemContent {{ news.excerpt_separator }}
+      ul.news__tags
+        {% for tag in news.tags %}
+        li
+          a.news__tag(href="../{{ tag }}") {{ tag | replace:'-',' ' }}
+        {% endfor %}
+        //- .btn.news__itemBtn Čítať ďalej   
+    {% endfor %}
+    

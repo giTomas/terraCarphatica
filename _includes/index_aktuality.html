@@ -1,55 +1,11 @@
 
 <section>
   <div class="news__container">
-    <h2 class="news__title"> Aktuality</h2>
-    <div class="news__itemContainer"><img src="../assets/img/nature1.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Lorem ipsum</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/nature2.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Maecenas vitae varius magna</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/anim2.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Aenean eu leo lectus</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/anim5.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Vivamus ultricies lacinia felis ac sollicitudin</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/anim6.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Lorem Ipsum</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/5.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Lorem Ipsum</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/anim1.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Lorem Ipsum</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
-    <div class="news__itemContainer"><img src="../assets/img/nature3.jpeg"/>
-      <div class="news__contentContainer"><a href="/">
-          <h3 class="news__itemTitle">Lorem Ipsum</h3>
-          <h4 class="news_itemDate">21.5.2016</h4>
-          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.</p><a href="/" class="btn news__itemBtn">Čítať ďalej</a></a></div>
-    </div>
+    <h2 class="news__title"> Aktuality</h2>{% for news in site.categories.news limit:8 %}
+    <div class="news__itemContainer"><img src="assets/img/{{news.imgIndex}}" alt="{{news.alt}}" class="news__image"/><a href="{{news.url}}" class="news__contentContainer">
+        <h3 class="news__itemTitle">{{ news.title }} </h3>
+        <h4 class="news_itemDate">{{ news.date | date: "%d/%m/%Y"}}</h4>
+        <p class="news__itemContent">{{ news.excerpt_separator }}</p></a><a href="{{news.url}}" class="btn news__itemBtn">Čítať ďalej   </a></div>{% endfor %}
+    <div class="news__btnContainer"><a href="../aktuality/" class="btn news__allNews">Všetky aktuality</a></div>
   </div>
-  <div class="news__btnContainer"><a href="/" class="btn news__allNews">Všetky aktuality</a></div>
 </section>

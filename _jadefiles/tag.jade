@@ -1,0 +1,19 @@
+section
+  .news__container
+    h2.news__title Projekty
+
+    {% for tag in site.tags.Projekty %}
+    .news__itemContainer
+      img.news__image(src= "../assets/img/{{tag.imgIndex}}")      
+      a.news__contentContainer(href= "{{tag.url}}")
+        h3.news__itemTitle {{ tag.title }} 
+        h4.news_itemDate {{ tag.date | date: "%d/%m/%Y"}}
+        p.news__itemContent {{ tag.excerpt_separator }}
+      ul.news__tags
+        {% for tag in tag.tags %}
+        li
+          a.news__tag(href="../{{ tag }}") {{ tag | replace:'-',' ' }}
+        {% endfor %}
+        //- .btn.news__itemBtn Čítať ďalej   
+    {% endfor %}
+    
