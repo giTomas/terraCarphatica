@@ -1,0 +1,17 @@
+
+- id: galleria1
+  galleryDescription: popis
+  featuredImage: indexGalleriesList/1.jpeg
+  featuredAlt: foto
+- id: galleria2
+  galleryDescription: popis
+  featuredImage: indexGalleriesList/4.jpeg
+  featuredAlt: foto
+- id: galleria3
+  galleryDescription: popis
+  featuredImage: indexGalleriesList/8.jpeg
+  featuredAlt: foto
+- id: galleria3
+  galleryDescription: popis
+  featuredImage: indexGalleriesList/2.jpeg
+  featuredAlt: foto

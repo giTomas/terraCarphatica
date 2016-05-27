@@ -5,6 +5,7 @@ category: news
 imgIndex: nature3.jpeg
 alt: obrazok
 tags: [ Projekty, tag3, tag4 ]
+class: border
 ---
 
 Nam sit amet libero massa. Cras eget suscipit nisl. Quisque in orci ut velit ultrices placerat. Fusce in tortor vitae massa viverra rutrum. Sed auctor, est eget porttitor hendrerit, diam tellus condimentum nunc, eu scelerisque leo mi quis libero. Etiam pellentesque justo diam, non fringilla neque scelerisque vitae. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin facilisis, lectus at hendrerit iaculis, lectus metus sodales justo, ut finibus magna elit dictum lacus. Vestibulum iaculis rhoncus nisi ut dictum. Morbi sit amet velit eros. Aenean sit amet ipsum euismod, tempus velit vel, feugiat ligula. Praesent id convallis dolor.

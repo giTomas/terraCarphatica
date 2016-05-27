@@ -4,7 +4,8 @@ excerpt_separator: Fusce in lorem elementum est dignissim maximus quis ac magna.
 category: news
 imgIndex: nature5.jpeg
 alt: obrazok
-tags: [ Mal&eacute;-Karpaty, tag5 ]
+tags: [ Male-Karpaty, tag5 ]
+class: border
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu nibh sed leo accumsan euismod vitae et lorem. Etiam cursus porttitor auctor. Nullam blandit, dui vel rhoncus tempus, ex elit tempus neque, pellentesque laoreet felis mi eget lacus. Maecenas vestibulum non dolor eget pharetra. Praesent lobortis velit leo, ac condimentum sem sodales et. Morbi vitae pretium est. Praesent eu luctus augue. Fusce in lorem elementum est dignissim maximus quis ac magna. Etiam ornare mauris non dui lacinia, vel bibendum neque eleifend. Sed et orci sem. Nunc libero ligula, rutrum vehicula fringilla et, commodo id odio. Nullam at ante elit. Praesent interdum suscipit risus vel varius.

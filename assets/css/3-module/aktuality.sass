@@ -1,18 +1,3 @@
-.news__container,
-.coworkers__wrapper,
-.nav__container,
-.news__btnContainer,
-.newsSubsite__container,
-.photoGalleries__container
-  width: $pageWidth
-  margin: 0 auto
-  display: flex
-  flex-wrap: wrap
-  //background-color: $backgroundColor
-  @media (max-width: 700px)
-    width: 80%
-  @media (max-width: 500px)
-    width: 95%
 
 .news__container
   //align-items: flex-start
@@ -23,25 +8,34 @@
 
 .news__itemContainer
   width: calc(25% - 1em)
-  margin: 1em 0.5em 0
+  position: relative
+  margin: 0.5em
   display: flex
   flex-direction: column
   flex-wrap: wrap
   align-items: center
-  padding-bottom: 0.5em
+  //padding-bottom: 0.5em
   box-shadow: $box-shadow
   background-color: $backgroundColor
   cursor: pointer
-  //transition: box-shadow 0.1s ease-in 0
+
+  transition: border-bottom-color 2s ease-out
   &:hover
-    //transition: box-shadow 0.1s ease-out 0.1s
     .news__itemBtn
       opacity: 1
       transition: opacity 1s ease-out 0.1s
-  @media (max-width: 1050px)
+  //@media (max-width: 1100px)
+    width: calc(25% - 1em)
+  @media (max-width: 1000px)
+    width: calc(33.333% - 1em)
+  @media (max-width: 700px)
     width: calc(50% - 1em)
-  @media (max-width: 400px)
+  @media (max-width: 450px)
     width: calc(100% - 1em)
+
+.border
+  border-bottom: 0.5em solid transparent
+
 
 .news__image
   object-fit: cover
@@ -63,10 +57,13 @@
   //padding-top: 1em
   transition: color 0.2s ease-out 0.1s
   &:hover
-    color: $hoverColor
+    color: $aktualityFarba
 
 .news_itemDate, .news__tags
   padding-bottom: 0.5em
+
+.news_itemDate, .news__itemContent
+  color: $secondTextColor
 
 .news_itemDate
   padding-bottom: 0.5em
@@ -77,15 +74,18 @@
   font-size: 1rem
   line-height: 1.3
 
+
 .news__itemBtn
   opacity: 0
-  margin-top: 0.5em
-  margin-top: auto
+  //margin-top: 0.5em
+  border: 1px solid $hoverColor
+  margin: auto 0 0.5em
+
   //transition: opacity 0.1s ease-in 0s
 
 .news__allNews
   font-size: 1.25rem
-  margin-top: 1em
+  margin-top: 1.5em
   margin-bottom: 2.5em
   font-variant: small-caps
   font-weight: bold
@@ -100,9 +100,11 @@
   justify-content: center
 
 .news__tag
-  padding: 0 0.5em
-  margin: 0.5em 0.5em 0
-  background-color: $linksColor
-  color: $headerColor
+  padding: 0 0.25em 0.15em  //hack
+  //margin: 0.5em 0.5em 0
+  margin: 0 0.25em 0.25em 0
+  background-color: $hoverColor
+  color: white
+  line-height: 1.1
   &:hover
-    background-color: $hoverColor
+    background-color: lighten($hoverColor, 10%)

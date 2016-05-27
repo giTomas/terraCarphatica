@@ -2,7 +2,7 @@ body
   background-color: $basicColor
 
 a
-  display: inline-block
+  display: block
   text-decoration: none
   transition: color 0.2s ease
   color: $linksColor
@@ -16,8 +16,11 @@ img
   width: 100%
 
 :root
-  font-family: sans-serif
-  font-size: 13px
+  //font-family: helvetica, sans-serif
+  font-family: $sansSerif
+  //font-family: 'Century Gothic', sans-serif
+  //font-family: sans-serif
+  font-size: 14px
   color: $textColor
 
 //typography
@@ -42,7 +45,6 @@ h3
   color: $titleColor
 
 .btn
-  border: 1px solid $hoverColor
   //margin-top: 1em
   padding: 0.4em 1em
   transition: 0.2s ease-out 0.1s

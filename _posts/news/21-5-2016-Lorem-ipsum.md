@@ -4,7 +4,8 @@ excerpt_separator: Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac m
 category: news
 imgIndex: anim2.jpeg
 alt: obrazok
-tags: [ Malé-Karpaty, tag4 ]
+tags: [ Male-Karpaty, tag4 ]
+class: border
 ---
 
 Morbi sed eros in eros blandit ornare vitae vel quam. Donec nec pharetra ipsum. Etiam condimentum purus vel elementum tincidunt. Morbi a porttitor odio. Curabitur malesuada luctus diam, sit amet volutpat lacus finibus ut. Nullam venenatis, nisi at dictum mattis, nulla leo fermentum magna, sit amet porta neque diam ac nunc. Proin vestibulum cursus quam, eleifend pharetra metus bibendum sed. Ut justo lorem, tincidunt ac imperdiet eu, facilisis eu libero. Nulla ultricies bibendum erat non accumsan. Mauris tincidunt nibh commodo, dignissim turpis eu, tempus nunc. Suspendisse ante nunc, lobortis nec sollicitudin eu, cursus porttitor lectus. Quisque interdum felis hendrerit, porta massa at, venenatis odio. Aliquam tempor scelerisque sem sed semper. Fusce pharetra ex et nisi imperdiet, in pulvinar velit blandit. Morbi dolor magna, molestie vel sem at, molestie malesuada ipsum. Pellentesque placerat, dolor ac bibendum posuere, sapien quam fermentum tortor, sed consectetur magna urna ut nulla.

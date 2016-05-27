@@ -1,8 +1,39 @@
-//- mixin news(src, alt, name, href)
+mixin galleriesItem(src, alt, name, description, href)
+  figure.galleriesItem__figure
+    img(src= src, alt= alt)
+    a(href=href)
+      figcaption.galleriesItem__figcaption
+        h3.galleriesItem__name= name
+        p.galeriesItem__description= description
 
 
 section
   .photoGalleries__container
     h2.news__title  Fotogalérie
     .photoGalleries__itemsContainer
+      +galleriesItem('assets/img/indexGalleriesList/1.jpeg', 'foto', 'galleria1', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/4.jpeg', 'foto', 'galleria2', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/8.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/2.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/3.jpeg', 'foto', 'galleria5', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/5.jpeg', 'foto', 'galleria7', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/7.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/2.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/1.jpeg', 'foto', 'galleria6', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/5.jpeg', 'foto', 'galleria2', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/8.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/7.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+
+//- section
+  //- .photoGalleries__container
+    //- h2.news__title  Fotogalérie
+    //- .photoGalleries__itemsContainer
+      //- {% for gallery in site.data.galleries  %}
+      //- figure.galleriesItem__figure
+        //- img(src= "assets/img/{{ gallery.featuredImage }}", alt= "{{ gallery.featuredAlt }}")
+        //- a(href="{{ gallery.url }}")
+          //- figcaption.galleriesItem__figcaption
+            //- h3.galleriesItem__name {{gallery.id}}
+            //- p.galeriesItem__description
+      //- {% endfor %}
       
