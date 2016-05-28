@@ -1,0 +1,29 @@
+
+<section>
+  <div id="outer__container" class="outer__container">
+    <div class="sidebar__container">
+      <div id="sidebar__content" class="sidebar__content">
+        <ul class="sidebar__nav">
+          <li> <a href="aktuality/">Vsetky aktuality
+              <ul class="sioebarTagy">
+                <li><a href="Projekty/">Projekty</a></li>
+                <li><a href="Male-Karpaty/">Male Karpaty</a></li>
+                <li><a href="Male-Karpaty/">Činnosť</a></li>
+                <li><a href="Male-Karpaty/">Články</a></li>
+                <li><a href="Male-Karpaty/">Udalosti</a></li>
+                <li><a href="Male-Karpaty/">Všetky tagy</a></li>
+              </ul></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inner__container2">
+      <div class="title2">
+        <h2>Aktuality</h2>
+      </div>{% for news in site.categories.news limit:8 %}
+      <div class="itemContainer {{.news.class}}"><img src="assets/img/{{news.imgIndex}}" alt="{{news.alt}}" class="news__image"/><a href="{{news.url}}" class="news__contentContainer">
+          <h3 class="news__itemTitle">{{ news.title }} </h3>
+          <h4 class="news_itemDate">{{ news.date | date: "%d/%m/%Y"}}</h4>
+          <p class="news__itemContent">{{ news.excerpt_separator }} </p></a></div>{% endfor %}  
+    </div>
+  </div>
+</section>

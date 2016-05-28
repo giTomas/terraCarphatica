@@ -1,0 +1,38 @@
+section
+  #outer__container.outer__container
+    .sidebar__container
+      #sidebar__content.sidebar__content
+        ul.sidebar__nav
+          li 
+           a(href="aktuality/") Vsetky aktuality
+            ul.sioebarTagy
+              li
+                a(href="Projekty/") Projekty
+              li
+                a(href="Male-Karpaty/") Male Karpaty
+              li
+                a(href="Male-Karpaty/") Činnosť
+              li
+                a(href="Male-Karpaty/") Články
+              li
+                a(href="Male-Karpaty/") Udalosti
+              li
+                a(href="Male-Karpaty/") Všetky tagy
+                
+    .inner__container2
+      .title2
+        h2 Aktuality
+      {% for news in site.categories.news limit:8 %}
+      .itemContainer(class="{{.news.class}}")
+        img.news__image(src= "assets/img/{{news.imgIndex}}" alt="{{news.alt}}")      
+        a.news__contentContainer(href= "{{news.url}}")
+          h3.news__itemTitle {{ news.title }} 
+          h4.news_itemDate {{ news.date | date: "%d/%m/%Y"}}
+          p.news__itemContent {{ news.excerpt_separator }} 
+      {% endfor %}  
+
+      
+
+
+      
+    

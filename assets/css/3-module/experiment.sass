@@ -1,0 +1,100 @@
+.outer__container
+  margin: $marginMain
+  padding-top: 4em
+  //width: $pageWidth
+  display: flex
+  // @media (max-width: 700px)
+    width: $pageWidth700
+  // @media (max-width: 500px)
+    width: $pageWidth500
+
+.inner__container1, .inner__container2
+  //margin-top: 4em
+
+.sidebar__container
+  //width: 280px
+  //padding-left: 1em
+  width: 240px
+  @media(max-width: 900px)
+    display: none
+
+.title, .title2
+  //box-shadow: $box-shadow
+  margin-bottom: 2em
+
+  //background-color: $backgroundColor
+  width: 100%
+
+.title2
+  margin-left: 2em
+  color: $titleColor
+
+
+.title
+  box-shadow: $box-shadow
+  color: white
+  background-color: black
+  padding: 0.5rem 0
+
+.sidebar__content
+  margin-top: 6em
+  padding: 2em
+  width: 240px
+  box-shadow: $box-shadow
+  background-color: $backgroundColor
+
+.sidebar__nav
+  font-size: 1.4rem
+  font-weight: bold
+  font-variant: small-caps
+
+.content__logo
+  background-color: white
+  height: 200px
+  width: 200px
+  border: 4px solid black
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  @media(max-width: 700px)
+    display: none
+
+.inner__container2
+  display: flex
+  flex-wrap: wrap
+  flex-grow: 2
+
+.itemContainer
+  width: calc(25% - 20px)
+  //width: calc(25% - 1em)
+  //flex: 1 0 calc(33.333% - 1em)
+  position: relative
+  margin: 0 0 2em 2em
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  align-items: center
+  //padding-bottom: 0.5em
+  box-shadow: $box-shadow
+  background-color: $backgroundColor
+  cursor: pointer
+  transition: border-bottom-color 2s ease-out
+  &:hover
+    .news__itemBtn
+      opacity: 1
+      transition: opacity 1s ease-out 0.1s
+  @media (max-width: 1100px)
+    width: calc(33.33% - 20px)
+  @media (max-width: 1000px)
+    width: calc(50% - 20px)
+    //flex-basis: calc(50% - 1em)
+  @media (max-width: 900px)
+    width: calc(33.33% - 20px)
+    //flex-basis: calc(50% - 1em)
+  @media (max-width: 700px)
+    width: calc(50% - 20px)
+  @media (max-width: 500px)
+    width: calc(100% - 20px)
+  //@media (max-width: 450px)
+    width: calc(100% - 1em)
