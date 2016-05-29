@@ -6,4 +6,15 @@
 .border-is-visible
   //border-bottom: 0.5em solid $aktualityFarba
 
-.sidebar-is-static
+.sidebar-is-fixed
+  position: fixed
+  z-index: 99
+  box-shadow: 1px 0 3px rgba(grey, 0.9)
+  top: 0
+  bottom: 0
+  left: 0
+  background-color: $backgroundColor
+  height: 100vh
+  .sidebar__title
+    transition: opacity 0.5s linear 0s
+    opacity: 1

@@ -4,8 +4,8 @@ excerpt_separator: Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibe
 category: news
 imgIndex: anim6.jpeg
 alt: obrazok
-tags: [ Male-Karpaty, tag3, tag4 ]
-class: border
+tags: [ Projekty, tag3, tag4 ]
+class: border-projekty
 ---
 
 Vivamus purus diam, viverra at metus eget, porttitor finibus nunc. Curabitur eu cursus lectus, et tincidunt lectus. Etiam ultricies magna eget metus volutpat volutpat. Donec varius metus rhoncus, vulputate magna eget, hendrerit dolor. Donec non tincidunt massa. Duis porta ultricies justo eget scelerisque. Aenean commodo pretium ante eu molestie. Integer aliquam libero at est interdum tincidunt. Suspendisse ultrices sapien ac lectus sodales viverra. Phasellus eleifend sem at nisi aliquam iaculis sed sit amet risus. Aliquam pretium diam urna, a cursus nisi vehicula non. Pellentesque lectus mauris, posuere ac velit ac, dapibus interdum ligula. Donec nec urna in est lobortis blandit in quis ligula.

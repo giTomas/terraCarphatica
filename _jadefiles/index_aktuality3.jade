@@ -1,0 +1,68 @@
+mixin galleriesItem(src, alt, name, description, href)
+  figure.galleriesItem__figure
+    img(src= src, alt= alt)
+    a(href=href)
+      figcaption.galleriesItem__figcaption
+        h3.galleriesItem__name= name
+        p.galeriesItem__description= description
+
+
+aside.sidebar__container
+  #sidebar__content.sidebar__content
+    .sidebar__title Terra Carpathica
+    ul.sidebar__nav
+      li 
+       a.sidebar__linkMaior(href="aktuality/") Všetky aktuality
+       ul.sidebarTagy
+        li
+          a.sidebar__linkMinor(href="projekty/") Projekty
+        li
+          a.sidebar__linkMinor(href="cinnost/") Činnosť
+        li
+          a.sidebar__linkMinor(href="clanky/") Články
+        li
+          a.sidebar__linkMinor(href="udalosti/") Udalosti
+        li
+          a.sidebar__linkMinor(href="vsetky-tagy/") Všetky tagy
+      li 
+        a.sidebar__linkMaior.linkMaior-padding(href="projekty/") Zoznam projektov
+      li 
+        a.sidebar__linkMaior.linkMaior-padding(href="aktuality/") Fotogalérie
+      li 
+        a.sidebar__linkMaior.linkMaior-padding(href="aktuality/") Videogalérie
+        
+.index__container            
+  section#news__container.news__container
+    h2.section__title Najnovšie aktuality
+    {% for news in site.categories.news limit:8 %}
+    .itemContainer(class="{{.news.class}}")
+      img.news__image(src= "assets/img/{{news.imgIndex}}" alt="{{news.alt}}")      
+      a.news__contentContainer(href= "{{news.url}}")
+        h3.news__itemTitle {{ news.title }} 
+        h4.news_itemDate {{ news.date | date: "%d/%m/%Y"}}
+        p.news__itemContent {{ news.excerpt_separator }} 
+    {% endfor %}  
+  section#photogalleries__container
+    h2.section__title Najnovšie fotogalérie
+    .photoGalleries__itemsContainer
+      +galleriesItem('assets/img/indexGalleriesList/1.jpeg', 'foto', 'galleria1', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/4.jpeg', 'foto', 'galleria2', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/8.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/2.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/3.jpeg', 'foto', 'galleria5', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/5.jpeg', 'foto', 'galleria7', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/7.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/2.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/1.jpeg', 'foto', 'galleria6', 'popis', '/galleria1')
+      +galleriesItem('assets/img/indexGalleriesList/5.jpeg', 'foto', 'galleria2', 'popis', '/galleria2')
+      +galleriesItem('assets/img/indexGalleriesList/8.jpeg', 'foto', 'galleria3', 'popis', '/galleria4')
+      +galleriesItem('assets/img/indexGalleriesList/7.jpeg', 'foto', 'galleria4', 'popis', '/galleria4')
+  section#members__container
+    h2.section__title Členovia
+    .members__itemsContainer
+  div(style="height: 1000px; width: 100%")
+      
+
+
+      
+    

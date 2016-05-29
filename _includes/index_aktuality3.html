@@ -1,0 +1,99 @@
+
+<aside class="sidebar__container">
+  <div id="sidebar__content" class="sidebar__content">
+    <div class="sidebar__title">Terra Carpathica</div>
+    <ul class="sidebar__nav">
+      <li> <a href="aktuality/" class="sidebar__linkMaior">Všetky aktuality</a>
+        <ul class="sidebarTagy">
+          <li><a href="projekty/" class="sidebar__linkMinor">Projekty</a></li>
+          <li><a href="cinnost/" class="sidebar__linkMinor">Činnosť</a></li>
+          <li><a href="clanky/" class="sidebar__linkMinor">Články</a></li>
+          <li><a href="udalosti/" class="sidebar__linkMinor">Udalosti</a></li>
+          <li><a href="vsetky-tagy/" class="sidebar__linkMinor">Všetky tagy</a></li>
+        </ul>
+      </li>
+      <li> <a href="projekty/" class="sidebar__linkMaior linkMaior-padding">Zoznam projektov</a></li>
+      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Fotogalérie</a></li>
+      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Videogalérie</a></li>
+    </ul>
+  </div>
+</aside>
+<div class="index__container">           
+  <section id="news__container" class="news__container">
+    <h2 class="section__title">Najnovšie aktuality</h2>{% for news in site.categories.news limit:8 %}
+    <div class="itemContainer {{.news.class}}"><img src="assets/img/{{news.imgIndex}}" alt="{{news.alt}}" class="news__image"/><a href="{{news.url}}" class="news__contentContainer">
+        <h3 class="news__itemTitle">{{ news.title }} </h3>
+        <h4 class="news_itemDate">{{ news.date | date: "%d/%m/%Y"}}</h4>
+        <p class="news__itemContent">{{ news.excerpt_separator }} </p></a></div>{% endfor %}  
+  </section>
+  <section id="photogalleries__container">
+    <h2 class="section__title">Najnovšie fotogalérie</h2>
+    <div class="photoGalleries__itemsContainer">
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria1</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/4.jpeg" alt="foto"/><a href="/galleria2">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria2</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria4</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria3</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/3.jpeg" alt="foto"/><a href="/galleria1">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria5</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria7</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria3</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria4</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria6</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria2</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria3</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <h3 class="galleriesItem__name">galleria4</h3>
+            <p class="galeriesItem__description">popis</p>
+          </figcaption></a></figure>
+    </div>
+  </section>
+  <section id="members__container">
+    <h2 class="section__title">Členovia</h2>
+    <div class="members__itemsContainer"></div>
+  </section>
+  <div style="height: 1000px; width: 100%"></div>
+</div>

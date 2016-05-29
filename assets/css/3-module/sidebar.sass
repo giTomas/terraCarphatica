@@ -1,0 +1,64 @@
+.outer__container
+  width: 100%
+  min-height: 100%
+  display: flex
+  //flex-wrap: wrap
+  //align-items: flex-start
+
+.sidebar__container
+  //margin-top: 1em
+  width: 260px
+  height: 100vh
+  background-color: $backgroundColor
+  //box-shadow: 2px 2px 2px rgba(grey, 0.9)
+  display: flex
+  justify-content: center
+  flex: 1 0 260px
+  //align-items: center
+
+.sidebar__content
+  padding-top: 7em
+  box-shadow: 0px 0 2px rgba(grey, 0.9)
+  width: 260px
+  display: flex
+  //justify-content: center
+  //flex-wrap: wrap
+  flex-direction: column
+  align-items: center
+
+
+  //z-index: 99
+
+
+.sidebar__title
+  width: 100%
+  text-align: center
+  font-size: 3rem
+  //visibility: hidden
+  padding-bottom: 1.333em
+  //color: black
+  opacity: 0
+  transition: opacity 0.05s linear 0s
+
+
+.sidebar__nav
+
+.sidebar__linkMaior
+  font-size: 2rem
+  font-weight: bold
+  color: black
+
+.linkMaior-padding
+  padding-top: 0.4em
+
+.sidebar__linkMinor
+  font-size: 1.5rem
+  padding-top: 0.2em
+  &[href^="cinnost/"]:hover
+   color: $cinnostFarba
+  &[href^="projekty/"]:hover
+   color: $projektyFarba
+  &[href^="clanky/"]:hover
+   color: $clankyFarba
+  &[href^="udalosti/"]:hover
+   color: $udalostiFarba

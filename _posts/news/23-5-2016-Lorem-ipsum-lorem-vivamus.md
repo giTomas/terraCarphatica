@@ -5,7 +5,7 @@ category: news
 imgIndex: anim1.jpeg
 alt: obrazok
 tags: [ Projekty, Male-Karpaty ]
-class: border
+class: border-projekty
 ---
 
 

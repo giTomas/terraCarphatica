@@ -4,8 +4,8 @@ excerpt_separator: Maecenas vitae varius magna. Sed ac magna bibendum, auctor en
 category: news
 imgIndex: anim5.jpeg
 alt: obrazok
-tags: [ Male-Karpaty, tag3, tag4 ]
-class: border
+tags: [ Udalosti, tag3, tag4 ]
+class: border-udalosti
 ---
 
 Sed non erat lorem. Suspendisse dapibus bibendum arcu. Aenean sagittis, neque eu iaculis hendrerit, lectus ipsum luctus purus, vitae maximus metus nibh pretium turpis. Fusce interdum mi nec egestas aliquet. Donec at odio massa. Ut nec posuere lacus, ut ornare quam. Mauris non massa mattis, blandit turpis eget, congue nunc. In a tincidunt erat, at blandit leo. Nullam dignissim mollis tellus at elementum. Fusce purus libero, congue at ante nec, ornare tincidunt ante. In blandit aliquet mi non vestibulum. Duis viverra consectetur euismod. Integer tincidunt felis quam, id imperdiet libero ornare nec. Integer tincidunt, erat sit amet porta gravida, velit ligula molestie orci, non efficitur enim justo nec tortor. Pellentesque vel lectus et mi lobortis malesuada id at felis.
