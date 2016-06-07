@@ -1,0 +1,194 @@
+.modal__outerContainer
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  //bottom: 0
+  //right: 0
+  left: 0
+  //display: flex
+  //justify-content: center
+  //align-items: center
+  background-color: rgba(black, 0.9)
+  z-index: 99   //!!!!!
+  opacity: 0
+  transition: opacity 0.4s linear 0s
+
+//.modal__innerContainer
+  width: 90%
+  height: 85%
+
+  align-items: center
+  //position: relative
+  //overflow-x: hidden
+
+//.modal__centeringContainer
+  width: 90%
+  height: 85%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.modal__image
+  max-width: 100%
+  max-height: 85%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate3d(-200%, -50%, 0)
+  //transform: translateX(-150%)
+  //max-height: 90%
+  //position: absolute
+  // max-height: 90%
+  object-fit: cover
+  transition: transform 0.4s ease-out 0s
+  //overflow-: hidden
+
+.modal__figcaption
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  background-color: rgba(white, 0.8)
+  //width: 38.19%
+  display: flex
+  margin: 1em
+  //padding:  1em
+  opacity: 0
+  transition: opacity 0.15s linear 0s
+
+.modal__left, .modal__right
+  cursor: pointer
+  transition: all 0.1s ease-out
+  &:hover
+    background-color: black
+    svg
+      fill: white
+
+.modal__figContent
+  color: black
+  text-align: center
+  padding: 0 2em
+  line-height: 1.3
+  flex: 1
+
+.modal__figName
+  font-size: 2em
+
+.modal__close
+  position: absolute
+  top: 0
+  right: 0
+  cursor: pointer
+  margin: 0.175em
+  //border: 2px solid white
+  //border-radius: 50%
+  svg
+    width: 4em
+    height: 4em
+    fill: white
+    transition: fill 0.1s ease-out
+  &:hover
+    svg
+      fill: lightgrey
+
+// modal 2
+.l-modal
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  display: none
+  opacity: 0
+  z-index: 99
+  background-color: rgba($black, 0.95)
+  justify-content: center
+  align-items: center
+  //z-index: 9   //!!!!!
+  //opacity: 0
+  //transition: opacity 0.4s linear 0s
+
+.c-modal
+  width: 90%
+  //height: 95%
+  max-width: 1200px
+  position: relative
+  //background-color: $backgroundColor
+  overflow: hidden
+  display: flex
+  justify-content: center
+
+
+.c-modal__imgContainer
+  position: relative
+  display: none
+  opacity: 0
+  max-height: 100vh
+
+.c-modal__figcaption
+  transition: opacity 0.1s ease 0s
+  &:hover
+    .c-modal__description
+      opacity: 1
+
+
+.c-modal__ctrl
+  position: absolute
+  opacity: 0
+  top: 0
+  left: 0
+  transition: opacity 0.1s ease 0s
+  width: 100%
+  height: 100%
+  &:hover
+    opacity: 1
+
+  > *
+    position: absolute
+    cursor: pointer
+    background-color: rgba($backgroundColor, 0.85)
+    margin:  0.5em
+  svg
+    width: 4em
+    height: 4em
+    //fill: white
+
+.c-modal__ctrl-close
+  //width: 100%
+  top: 0
+  right: 0
+
+.c-modal_ctrl-left
+  //width: 100%
+  bottom: 50%
+  left: 0
+  transform: translateY(50%)
+
+.c-modal__ctrl-right
+  //width: 100%
+  bottom: 50%
+  right: 0
+  transform: translateY(50%)
+
+.c-modal__img
+  object-fit: cover
+  max-width: 100
+  max-height: 100%
+  //overflow-x: scroll
+
+.c-modal__description
+  background-color: rgba($backgroundColor, 0.85)
+  opacity: 0
+  font-size: 1.5rem
+  margin: 0.5rem
+  line-height: 1.4
+  padding: 0.5em 1em
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0

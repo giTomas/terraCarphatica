@@ -1,8 +1,8 @@
 ---
 layout: default-news-display
-excerpt_separator: Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.
+excerpt_separator: Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum.
 category: news
-imgIndex: nature2.jpeg
+imgIndex: thumb-akt-4.jpeg
 alt: obrazok
 tags: [ Projekty, Male-Karpaty, tag4 ]
 class: border-projekty

@@ -1,0 +1,98 @@
+mixin galleriesItem(src, alt, name, url)
+  figure.l-item__1-5(data-url= url)
+    .galleriesItem__container
+      img(src= src, alt= alt)
+      figcaption.galleriesItem__figcaption
+        .galleriesItem_centeringName
+          h3.galleriesItem__name= name
+        .galleriesItem_centeringBtn
+          .btn-show(data-url= url) Zväčšiť 
+
+aside.c-sidebar
+  .c-sidebar__content
+    a.c-logo(href="/")
+      .c-logo__svg
+        h1 Terra Carphatica
+    //- .sidebar__title Terra Carpathica
+    ul.c-sidebar__nav
+      li 
+       a.c-sidebar__linkMaior(href="../aktuality/") Všetky aktuality
+       ul.c-sidebar__tags
+        li
+          a.c-sidebar__linkMinor(href="projekty/") Projekty
+        li
+          a.c-sidebar__linkMinor(href="cinnost/") Činnosť
+        li
+          a.c-sidebar__linkMinor(href="clanky/") Články
+        li
+          a.c-sidebar__linkMinor(href="udalosti/") Udalosti
+        li
+          a.c-sidebar__linkMinor(href="vsetky-tagy/") Všetky tagy
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="projekty/") Zoznam projektov
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="aktuality/") Fotogalérie
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="aktuality/") Videogalérie
+        
+.c-main  
+  header
+    .c-banner.banner-gallery-4-1 
+      nav.c-nav 
+        ul.c-nav__items
+          li.c-nav__item
+            a.c-nav__link(href="/") Úvod
+          li.c-nav__item
+            a.c-nav__link(href="onas/") O nás
+          li.c-nav__item
+            a.c-nav__link(href="stanovy/") Stanovy
+          li.c-nav__item.nav-search
+            .c-nav__searchIcon(href="stanovy/")
+              svg(fill="#FFFFFF", height="24" ,viewBox="0 0 24 24", width="24", xmlns="http://www.w3.org/2000/svg")
+                  path(d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z")
+                  path(d="M0 0h24v24H0z" fill="none")
+              .c-nav__searchForm.js-fix-search  
+                form
+                  input(type="text", name="searchInput", placeholder="Sem napíšte, čo hladáte")
+                  button(type="submit") Hladať
+                    
+  section#js-gallery-1-2.l-section.l-section-start.-bottom
+    //h2.section__title Galeria1 
+    //- .photoGalleries__itemsContainer
+    .l-item-2-3.l-flex
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-1.jpeg', 'foto', 'foto1', '1')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-2.jpeg', 'foto', 'foto2', '2')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-3.jpeg', 'foto', 'foto4', '2')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-4.jpeg', 'foto', 'foto3', '4')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-5.jpeg', 'foto', 'foto5', '5')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-6.jpeg', 'foto', 'fot7', '6')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-7.jpeg', 'foto', 'foto3', '7')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-8.jpeg', 'foto', 'foto4', '8')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-9.jpeg', 'foto', 'foto6', '9')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-10.jpeg', 'foto', 'foto2', '10')
+    .l-item-1-3
+      .text__container
+        h2.text__title Galeria-3
+        p.text__unit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor augue eget augue consequat euismod. Vivamus vel tincidunt velit. Phasellus vehicula ante ac aliquet lobortis. In vulputate consequat nisl, sed facilisis justo finibus sit amet. Vivamus dictum lectus sed eleifend tempor. Praesent bibendum lorem massa, ornare hendrerit erat fermentum gravida.
+
+  header.c-banner.banner-gallery-4-2         
+  section#js-gallery-2-2.l-section.l-section-start.-bottom
+    //h2.section__title Galeria1 
+    //- .photoGalleries__itemsContainer
+    .l-item-2-3.l-flex
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-11.jpeg', 'foto', 'galleria4', '11')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-12.jpeg', 'foto', 'galleria3',  '11')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-3.jpeg', 'foto', 'foto4', '2')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-4.jpeg', 'foto', 'foto3', '4')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-5.jpeg', 'foto', 'foto5', '5')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-6.jpeg', 'foto', 'fot7', '6')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-7.jpeg', 'foto', 'foto3', '7')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-8.jpeg', 'foto', 'foto4', '8')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-9.jpeg', 'foto', 'foto6', '9')
+      +galleriesItem('../assets/img/indexGalleriesList/galeria1/thumb-10.jpeg', 'foto', 'foto2', '10')
+    .l-item-1-3
+      .text__container
+        p.text__unit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor augue eget augue consequat euismod. Vivamus vel tincidunt velit. Phasellus vehicula ante ac aliquet lobortis. In vulputate consequat nisl, sed facilisis justo finibus sit amet. Vivamus dictum lectus sed eleifend tempor. Praesent bibendum lorem massa, ornare hendrerit erat fermentum gravida. Curabitur porta at orci posuere accumsan. Sed eu eros eros.
+  section.c-banner.banner-gallery-4-3  
+  div(style="height: 500px; width: 100%; flex: 1")
+      

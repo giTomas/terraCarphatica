@@ -1,0 +1,59 @@
+
+<aside class="c-sidebar">
+  <div class="c-sidebar__content"><a href="/" class="c-logo">
+      <div class="c-logo__svg">
+        <h1>Terra Carphatica</h1>
+      </div></a>
+    <ul class="c-sidebar__nav">
+      <li> <a href="aktuality/" class="sidebar__linkMaior">Všetky aktuality</a>
+        <ul class="sidebar__tags">
+          <li><a href="projekty/" class="sidebar__linkMinor">Projekty</a></li>
+          <li><a href="cinnost/" class="sidebar__linkMinor">Činnosť</a></li>
+          <li><a href="clanky/" class="sidebar__linkMinor">Články</a></li>
+          <li><a href="udalosti/" class="sidebar__linkMinor">Udalosti</a></li>
+          <li><a href="vsetky-tagy/" class="sidebar__linkMinor">Všetky tagy</a></li>
+        </ul>
+      </li>
+      <li> <a href="projekty/" class="sidebar__linkMaior linkMaior-padding">Zoznam projektov</a></li>
+      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Fotogalérie</a></li>
+      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Videogalérie</a></li>
+    </ul>
+  </div>
+</aside>
+<div class="index__container"> 
+  <header>
+    <nav class="nav__container">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="/" class="nav__link">Úvod</a></li>
+        <li class="nav__item"><a href="onas/" class="nav__link">O nás</a></li>
+        <li class="nav__item"><a href="stanovy/" class="nav__link">Stanovy</a>
+          <li class="nav__item nav-search">
+            <div href="stanovy/" class="nav__searchIcon">
+              <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+              <div class="nav__searchForm"> 
+                <form>
+                  <input type="text" name="searchInput" placeholder="Sem napíšte, čo hladáte"/>
+                  <button type="submit">Hladať</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="news__container" class="news__container">
+    <h2 class="section__title">Najnovšie aktuality</h2>{% for news in site.categories.news  %}
+    <div class="itemContainer {{.news.class}}"><img src="../assets/img/{{news.imgIndex}}" alt="{{news.alt}}" class="news__image"/><a href="{{news.url}}" class="news__contentContainer">
+        <h3 class="news__itemTitle">{{ news.title }} </h3>
+        <h4 class="news_itemDate">{{ news.date | date: "%d/%m/%Y"}}</h4>
+        <p class="news__itemContent">{{ news.excerpt_separator }} </p></a>
+      <ul class="news__tags">{% for tag in news.tags %}
+        <li><a href="../{{ tag }}" class="news__tag">{{ tag | replace:'-',' ' }}</a></li>{% endfor %}
+      </ul>
+    </div>{% endfor %}  
+  </section>
+</div>

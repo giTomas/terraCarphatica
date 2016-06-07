@@ -1,6 +1,6 @@
 ---
 layout: default-news-display
-excerpt_separator: Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.
+excerpt_separator: Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit.
 category: news
 imgIndex: nature3.jpeg
 alt: obrazok

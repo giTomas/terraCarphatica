@@ -1,8 +1,8 @@
 ---
 layout: default-news-display
-excerpt_separator: Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna.
+excerpt_separator: Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit.
 category: news
-imgIndex: anim2.jpeg
+imgIndex: thumb-akt-3.jpeg
 alt: obrazok
 tags: [ Cinnost, tag4 ]
 class: border-cinnost

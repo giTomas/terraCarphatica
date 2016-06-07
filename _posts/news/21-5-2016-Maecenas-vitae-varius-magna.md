@@ -1,6 +1,6 @@
 ---
 layout: default-news-display
-excerpt_separator: Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.
+excerpt_separator: Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. 
 category: news
 imgIndex: anim5.jpeg
 alt: obrazok

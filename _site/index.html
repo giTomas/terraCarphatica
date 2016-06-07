@@ -13,203 +13,264 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-    <!--  -->
+    <div class="l-outer-container">
 
-<header>
-  <nav>
-    <div class="nav__container">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="/" class="nav__link">Úvod</a></li>
-        <li class="nav__item"><a href="onas/" class="nav__link">O nás</a></li>
-        <li class="nav__item"><a href="stanovy/" class="nav__link">Stanovy</a></li>
-        <li class="nav__item nav-search">
-          <div href="stanovy/" class="nav__searchIcon">
-            <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-            </svg>
-            <div class="nav__searchForm"> 
-              <form>
-                <input type="text" name="searchInput" placeholder="Sem napíšte, čo hladáte"/>
-                <button type="submit">Hladať</button>
-              </form>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="banner"> <a href="/" class="banner__logoContainer">
-      <div class="banner__logo">
+<aside class="c-sidebar">
+  <div class="c-sidebar__content"><a href="/" class="c-logo">
+      <div class="c-logo__svg">
         <h1>Terra Carphatica</h1>
-      </div></a></div>
-  <div class="header__greenStripe"></div>
-</header>
-
-<div class="outer__container">
-
-<aside class="sidebar__container">
-  <div id="sidebar__content" class="sidebar__content">
-    <div class="sidebar__title">Terra Carpathica</div>
-    <ul class="sidebar__nav">
-      <li> <a href="aktuality/" class="sidebar__linkMaior">Všetky aktuality</a>
-        <ul class="sidebarTagy">
-          <li><a href="projekty/" class="sidebar__linkMinor">Projekty</a></li>
-          <li><a href="cinnost/" class="sidebar__linkMinor">Činnosť</a></li>
-          <li><a href="clanky/" class="sidebar__linkMinor">Články</a></li>
-          <li><a href="udalosti/" class="sidebar__linkMinor">Udalosti</a></li>
-          <li><a href="vsetky-tagy/" class="sidebar__linkMinor">Všetky tagy</a></li>
+      </div></a>
+    <ul class="c-sidebar__nav">
+      <li> <a href="aktuality/" class="c-sidebar__linkMaior">Všetky aktuality</a>
+        <ul class="c-sidebar__tags">
+          <li><a href="projekty/" class="c-sidebar__linkMinor">Projekty</a></li>
+          <li><a href="cinnost/" class="c-sidebar__linkMinor">Činnosť</a></li>
+          <li><a href="clanky/" class="c-sidebar__linkMinor">Články</a></li>
+          <li><a href="udalosti/" class="c-sidebar__linkMinor">Udalosti</a></li>
+          <li><a href="vsetky-tagy/" class="c-sidebar__linkMinor">Všetky tagy</a></li>
         </ul>
       </li>
-      <li> <a href="projekty/" class="sidebar__linkMaior linkMaior-padding">Zoznam projektov</a></li>
-      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Fotogalérie</a></li>
-      <li> <a href="aktuality/" class="sidebar__linkMaior linkMaior-padding">Videogalérie</a></li>
+      <li> <a href="projekty/" class="c-sidebar__linkMaior linkMaior-padding">Zoznam projektov</a></li>
+      <li> <a href="aktuality/" class="c-sidebar__linkMaior linkMaior-padding">Fotogalérie</a></li>
+      <li> <a href="aktuality/" class="c-sidebar__linkMaior linkMaior-padding">Videogalérie</a></li>
     </ul>
   </div>
 </aside>
-<div class="index__container">           
-  <section id="news__container" class="news__container">
-    <h2 class="section__title">Najnovšie aktuality</h2>
-    <div class="itemContainer border-projekty"><img src="assets/img/anim1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Lorem Ipsum Lorem Vivamus </h3>
-        <h4 class="news_itemDate">23/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>
-    <div class="itemContainer border-clanky"><img src="assets/img/nature1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Ipsum-lorem-vivamus/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Ipsum Lorem Vivamus </h3>
-        <h4 class="news_itemDate">23/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>
-    <div class="itemContainer border-cinnost"><img src="assets/img/5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
-        <h4 class="news_itemDate">22/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>
-    <div class="itemContainer border-projekty"><img src="assets/img/anim6.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Vivamus-ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Vivamus Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. </p></a></div>
-    <div class="itemContainer border-udalosti"><img src="assets/img/anim5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Maecenas-vitae-varius-magna/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Maecenas Vitae Varius Magna </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>
-    <div class="itemContainer border-cinnost"><img src="assets/img/anim2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Lorem Ipsum </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. </p></a></div>
-    <div class="itemContainer border-projekty"><img src="assets/img/nature2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum-lorem/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Lorem Ipsum Lorem </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>
-    <div class="itemContainer border-clanky"><img src="assets/img/anim7.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Aeneam-eu-leo-lectus/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Aeneam Eu Leo Lectus </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies. </p></a></div>  
-  </section>
-  <section id="photogalleries__container">
-    <h2 class="section__title">Najnovšie fotogalérie</h2>
-    <div class="photoGalleries__itemsContainer">
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria1</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/4.jpeg" alt="foto"/><a href="/galleria2">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria2</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/3.jpeg" alt="foto"/><a href="/galleria1">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria5</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria7</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria6</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria2</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
-      <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
-          <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
-          </figcaption></a></figure>
+<div class="l-main"> 
+  <header>
+    <div class="c-banner banner-main"> 
+      <nav class="c-nav">
+        <ul class="c-nav__items">
+          <li class="c-nav__item"><a href="/" class="c-nav__link">Úvod</a></li>
+          <li class="c-nav__item"><a href="onas/" class="c-nav__link">O nás</a></li>
+          <li class="c-nav__item"><a href="stanovy/" class="c-nav__link">Stanovy</a></li>
+          <li class="c-nav__item nav-search">
+            <div href="stanovy/" class="c-nav__searchIcon">
+              <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+              <div class="c-nav__searchForm js-fix-search"> 
+                <form>
+                  <input type="text" name="searchInput" placeholder="Sem napíšte, čo hladáte"/>
+                  <button type="submit">Hladať</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="js-news" class="l-section c-news">
+    <div class="l-item-2-3 l-flex">
+       
+      
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-projekty"><img src="assets/img/thumb-akt-5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/06/02/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Lorem Ipsum Lorem Vivamus </h3>
+          <h4 class="news_itemDate">02/06/2016</h4>
+          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-projekty"><img src="assets/img/thumb-akt-1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Lorem Ipsum Lorem Vivamus </h3>
+          <h4 class="news_itemDate">23/05/2016</h4>
+          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-clanky"><img src="assets/img/nature1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Ipsum-lorem-vivamus/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Ipsum Lorem Vivamus </h3>
+          <h4 class="news_itemDate">23/05/2016</h4>
+          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-cinnost"><img src="assets/img/thumb-akt-2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
+          <h4 class="news_itemDate">22/05/2016</h4>
+          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-projekty"><img src="assets/img/anim6.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Vivamus-ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Vivamus Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
+          <h4 class="news_itemDate">21/05/2016</h4>
+          <p class="news__itemContent">Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+      <div class="c-news__item item-1-3 js-underline border-is-visible border-udalosti"><img src="assets/img/anim5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Maecenas-vitae-varius-magna/" class="news__contentContainer">
+          <h3 class="news__itemTitle">Maecenas Vitae Varius Magna </h3>
+          <h4 class="news_itemDate">21/05/2016</h4>
+          <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. </p></a></div>
+    </div>
+    <div class="l-item-1-3 l-flex">
+      <!--.border-bottom-->
+      <div class="text__container">
+        <h2 class="text__title">Aktuality</h2>
+        <p class="border-bottom">Suspendisse sapien ligula, vulputate vitae turpis ultricies, porta aliquam tortor. Integer luctus purus non maximus dictum. Proin elementum magna eget rutrum tempus. Nulla et massa a lacus pulvinar accumsan at eget velit. Nunc feugiat tellus vitae risus posuere mollis. In imperdiet efficitur arcu facilisis tristique. Vestibulum egestas porta mi a lobortis. Integer quam mi, sagittis at egestas in, sollicitudin nec urna. Ut quis condimentum velit, sit amet pharetra magna. Curabitur interdum lectus vel velit suscipit tempor. Praesent ex diam, pulvinar non sapien in, euismod pharetra nisl. Pellentesque nisi ipsum, tempor vel porta at, dignissim eget sapien. Maecenas vitae neque commodo, dignissim ex et, gravida nunc. </p>
+      </div>
     </div>
   </section>
-  <section id="members__container">
-    <h2 class="section__title">Členovia</h2>
-    <div class="members__itemsContainer"></div>
+  <section id="js-galleries" class="l-section">
+    <h2 class="section__title">Najnovšie fotogalérie</h2>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="/assets/img/indexGalleriesList/galeria1/thumb-1.jpeg" alt="foto"/><a href="galeria1/">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria1</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/galeria1/thumb-3.jpeg" alt="foto"/><a href="galeria2/">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria2</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/galeria1/thumb-4.jpeg" alt="foto"/><a href="galeria3/">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/galeria1/thumb-6.jpeg" alt="foto"/><a href="galeria4/">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/3.jpeg" alt="foto"/><a href="galeria5/">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria5</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria7</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria4</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria6</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
+    <figure class="l-item__1-6">
+      <div class="galleriesItem__container js-sliding galleriesItem-in-position"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
+          <figcaption class="galleriesItem__figcaption">
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria2</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <div class="btn-show">Ukázať </div>
+            </div>
+            <!--p.galeriesItem__description= description-->
+          </figcaption></a></div>
+    </figure>
   </section>
-  <div style="height: 1000px; width: 100%"></div>
+  <section id="members" class="l-section">
+    <h2 class="section__title">Členovia</h2><a href="/" class="members__item">
+      <div class="member__imgContainer"><img src="assets/img/members/sancho.jpeg" alt="sancho" class="member__img"/></div>
+      <div class="member__name">Sancho Panza</div></a><a href="/" class="members__item">
+      <div class="member__imgContainer"><img src="assets/img/members/quijote.jpeg" alt="quijote" class="member__img"/></div>
+      <div class="member__name">Don Quijote de la Mancha</div></a><a href="/" class="members__item">
+      <div class="member__imgContainer"><img src="assets/img/members/dulcinea.jpeg" alt="dulcinea" class="member__img"/></div>
+      <div class="member__name">Dulcinea</div></a><a href="/" class="members__item">
+      <div class="member__imgContainer"><img src="assets/img/members/miranda.jpeg" alt="miranda" class="member__img"/></div>
+      <div class="member__name">Miranda</div></a>
+  </section>
+  <div style="height: 500px; width: 100%"></div>
 </div>
 <!-- 
 <section>
   <div id="news__container" class="news__container">
     <h2 class="news__title"> Aktuality</h2>
-    <div class="news__itemContainer border-projekty"><img src="assets/img/anim1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
+    <div class="news__itemContainer border-projekty"><img src="assets/img/thumb-akt-5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/06/02/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
+        <h3 class="news__itemTitle">Lorem Ipsum Lorem Vivamus </h3>
+        <h4 class="news_itemDate">02/06/2016</h4>
+        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/06/02/Lorem-ipsum-lorem-vivamus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+    <div class="news__itemContainer border-projekty"><img src="assets/img/thumb-akt-1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="news__contentContainer">
         <h3 class="news__itemTitle">Lorem Ipsum Lorem Vivamus </h3>
         <h4 class="news_itemDate">23/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/05/23/Lorem-ipsum-lorem-vivamus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
     <div class="news__itemContainer border-clanky"><img src="assets/img/nature1.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/23/Ipsum-lorem-vivamus/" class="news__contentContainer">
         <h3 class="news__itemTitle">Ipsum Lorem Vivamus </h3>
         <h4 class="news_itemDate">23/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/23/Ipsum-lorem-vivamus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
-    <div class="news__itemContainer border-cinnost"><img src="assets/img/5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
+        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/05/23/Ipsum-lorem-vivamus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+    <div class="news__itemContainer border-cinnost"><img src="assets/img/thumb-akt-2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
         <h3 class="news__itemTitle">Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
         <h4 class="news_itemDate">22/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/05/22/Ultricies-lacinia-felis-ac-ac-sollicitudin/" class="btn news__itemBtn">Čítať ďalej   </a></div>
     <div class="news__itemContainer border-projekty"><img src="assets/img/anim6.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Vivamus-ultricies-lacinia-felis-ac-ac-sollicitudin/" class="news__contentContainer">
         <h3 class="news__itemTitle">Vivamus Ultricies Lacinia Felis Ac Ac Sollicitudin </h3>
         <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae.</p></a><a href="/news/2016/05/21/Vivamus-ultricies-lacinia-felis-ac-ac-sollicitudin/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+        <p class="news__itemContent">Lorem Ipsum', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/05/21/Vivamus-ultricies-lacinia-felis-ac-ac-sollicitudin/" class="btn news__itemBtn">Čítať ďalej   </a></div>
     <div class="news__itemContainer border-udalosti"><img src="assets/img/anim5.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Maecenas-vitae-varius-magna/" class="news__contentContainer">
         <h3 class="news__itemTitle">Maecenas Vitae Varius Magna </h3>
         <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/21/Maecenas-vitae-varius-magna/" class="btn news__itemBtn">Čítať ďalej   </a></div>
-    <div class="news__itemContainer border-cinnost"><img src="assets/img/anim2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum/" class="news__contentContainer">
+        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi.</p></a><a href="/news/2016/05/21/Maecenas-vitae-varius-magna/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+    <div class="news__itemContainer border-cinnost"><img src="assets/img/thumb-akt-3.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum/" class="news__contentContainer">
         <h3 class="news__itemTitle">Lorem Ipsum </h3>
         <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna.</p></a><a href="/news/2016/05/21/Lorem-ipsum/" class="btn news__itemBtn">Čítať ďalej   </a></div>
-    <div class="news__itemContainer border-projekty"><img src="assets/img/nature2.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum-lorem/" class="news__contentContainer">
+        <p class="news__itemContent">Aenean eu leo lectus', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit.</p></a><a href="/news/2016/05/21/Lorem-ipsum/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+    <div class="news__itemContainer border-projekty"><img src="assets/img/thumb-akt-4.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Lorem-ipsum-lorem/" class="news__contentContainer">
         <h3 class="news__itemTitle">Lorem Ipsum Lorem </h3>
         <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/21/Lorem-ipsum-lorem/" class="btn news__itemBtn">Čítať ďalej   </a></div>
-    <div class="news__itemContainer border-clanky"><img src="assets/img/anim7.jpeg" alt="obrazok" class="news__image"/><a href="/news/2016/05/21/Aeneam-eu-leo-lectus/" class="news__contentContainer">
-        <h3 class="news__itemTitle">Aeneam Eu Leo Lectus </h3>
-        <h4 class="news_itemDate">21/05/2016</h4>
-        <p class="news__itemContent">Maecenas vitae varius magna. Sed ac magna bibendum, auctor enim at, blandit nisi. Morbi gravida malesuada dolor, sit amet mattis mi viverra vitae. Mauris vitae tristique magna. Pellentesque viverra posuere ultricies.</p></a><a href="/news/2016/05/21/Aeneam-eu-leo-lectus/" class="btn news__itemBtn">Čítať ďalej   </a></div>
+        <p class="news__itemContent">Maecenas vitae varius magna', 'Maecenas vitae varius magna. Sed ac magna bibendum.</p></a><a href="/news/2016/05/21/Lorem-ipsum-lorem/" class="btn news__itemBtn">Čítať ďalej   </a></div>
     <div class="news__btnContainer"><a href="../aktuality/" class="btn news__allNews">Všetky aktuality</a></div>
   </div>
 </section> -->
@@ -226,63 +287,111 @@
     <div class="photoGalleries__itemsContainer">
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria1</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria1</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/4.jpeg" alt="foto"/><a href="/galleria2">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria2</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria2</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria4</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/3.jpeg" alt="foto"/><a href="/galleria1">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria5</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria5</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria7</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria7</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/2.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria4</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/1.jpeg" alt="foto"/><a href="/galleria1">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria6</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria6</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/5.jpeg" alt="foto"/><a href="/galleria2">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria2</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria2</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/8.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria3</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria3</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
       <figure class="galleriesItem__figure"><img src="assets/img/indexGalleriesList/7.jpeg" alt="foto"/><a href="/galleria4">
           <figcaption class="galleriesItem__figcaption">
-            <h3 class="galleriesItem__name">galleria4</h3>
-            <p class="galeriesItem__description">popis</p>
+            <div class="galleriesItem_centeringName">
+              <h3 class="galleriesItem__name">galleria4</h3>
+            </div>
+            <div class="galleriesItem_centeringBtn">
+              <p class="galeriesItem__description">popis</p>
+            </div>
           </figcaption></a></figure>
     </div>
   </div>
@@ -307,6 +416,7 @@
      <!-- <script src="assets/js/jquery-2.2.2.min.js"></script> -->
      <!-- <script src="assets/js/handlebars-v4.0.5.js"></script> -->
 
-     <script src="assets/js/dev/functions.js"></script>
+     <script src="assets/js/dev/search.js"></script>
+     <script src="assets/js/dev/scrollfn.js"></script>
     </body>
 </html>

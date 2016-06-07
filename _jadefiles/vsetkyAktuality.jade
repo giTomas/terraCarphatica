@@ -1,0 +1,67 @@
+aside.c-sidebar 
+  .c-sidebar__content 
+    a.c-logo(href="/")
+      .c-logo__svg
+        h1 Terra Carphatica
+    //- .sidebar__title Terra Carpathica
+    ul.c-sidebar__nav
+      li 
+       a.c-sidebar__linkMaior(href="aktuality/") Všetky aktuality
+       ul.c-sidebar__tags
+        li
+          a.c-sidebar__linkMinor(href="projekty/") Projekty
+        li
+          a.c-sidebar__linkMinor(href="cinnost/") Činnosť
+        li
+          a.c-sidebar__linkMinor(href="clanky/") Články
+        li
+          a.c-sidebar__linkMinor(href="udalosti/") Udalosti
+        li
+          a.c-sidebar__linkMinor(href="vsetky-tagy/") Všetky tagy
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="projekty/") Zoznam projektov
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="aktuality/") Fotogalérie
+      li 
+        a.c-sidebar__linkMaior.linkMaior-padding(href="aktuality/") Videogalérie
+        
+.l-main 
+  header
+    .c-banner.banner-main
+      nav.c-nav 
+        ul.c-nav__items
+          li.c-nav__item
+            a.c-nav__link(href="/") Úvod
+          li.c-nav__item
+            a.c-nav__link(href="onas/") O nás
+          li.c-nav__item
+            a.c-nav__link(href="stanovy/") Stanovy
+            li.c-nav__item.nav-search 
+              .c-nav__searchIcon(href="stanovy/")
+                svg(fill="#FFFFFF", height="24" ,viewBox="0 0 24 24", width="24", xmlns="http://www.w3.org/2000/svg")
+                    path(d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z")
+                    path(d="M0 0h24v24H0z" fill="none")
+                .c-nav__searchForm.js-fix-search  
+                  form
+                    input(type="text", name="searchInput", placeholder="Sem napíšte, čo hladáte")
+                    button(type="submit") Hladať
+                
+  section#js-news.l-section.c-news
+    h2.section__title Najnovšie aktuality
+    {% for news in site.categories.news  %}
+    .c-news__item.item-1-4(class="{{.news.class}}") 
+      img.news__image(src= "../assets/img/{{news.imgIndex}}" alt="{{news.alt}}")      
+      a.news__contentContainer(href= "{{news.url}}")
+        h3.news__itemTitle {{ news.title }} 
+        h4.news_itemDate {{ news.date | date: "%d/%m/%Y"}}
+        p.news__itemContent {{ news.excerpt_separator }} 
+      ul.news__tags
+        {% for tag in news.tags %}
+        li
+          a.news__tag(href="../{{ tag }}") {{ tag | replace:'-',' ' }}
+        {% endfor %}
+    {% endfor %}  
+
+
+
+    

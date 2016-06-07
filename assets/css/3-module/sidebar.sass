@@ -1,64 +1,71 @@
-.outer__container
-  width: 100%
-  min-height: 100%
-  display: flex
-  //flex-wrap: wrap
-  //align-items: flex-start
-
-.sidebar__container
-  //margin-top: 1em
-  width: 260px
-  height: 100vh
+.c-sidebar
+  //height: 100vh
+  min-width: 200px
   background-color: $backgroundColor
-  //box-shadow: 2px 2px 2px rgba(grey, 0.9)
-  display: flex
-  justify-content: center
-  flex: 1 0 260px
-  //align-items: center
-
-.sidebar__content
-  padding-top: 7em
-  box-shadow: 0px 0 2px rgba(grey, 0.9)
-  width: 260px
-  display: flex
+  //display: flex
   //justify-content: center
-  //flex-wrap: wrap
+  //flex: 1 0 240px
+  //display: none
+  @media (max-width: 700px)
+    display: none
+
+.c-sidebar__content
+  position: fixed
+  //padding-left: 1em
+  //border: 1em solid transparent
+  //border-image: linear-gradient(to left, $green, rgba($green, 0.1))
+  //border-image-slice: 1
+  width: 200px
+  display: flex
+  background-color: $green
   flex-direction: column
-  align-items: center
-
-
-  //z-index: 99
-
-
-.sidebar__title
-  width: 100%
   text-align: center
+  z-index: 9
+  box-shadow: 0 0 1px rgba(grey, 0.9)
+  top: 0
+  bottom: 0
+  left: 0
+  @media (max-width: 700px)
+    display: none
+
+.c-sidebar__title
+  width: 100%
   font-size: 3rem
-  //visibility: hidden
   padding-bottom: 1.333em
-  //color: black
+  color: white
+  font-weight: bold
   opacity: 0
   transition: opacity 0.05s linear 0s
 
+.c-sidebar__nav
 
-.sidebar__nav
-
-.sidebar__linkMaior
-  font-size: 2rem
+.c-sidebar__linkMaior
+  font-size: 1.75rem
   font-weight: bold
-  color: black
+  color: white
 
 .linkMaior-padding
   padding-top: 0.4em
 
-.sidebar__linkMinor
+.c-sidebar__tags
+  padding-top: 0.8em
+  li + li
+   padding-top: 0.3em
+
+.c-sidebar__linkMinor
   font-size: 1.5rem
-  padding-top: 0.2em
-  &[href^="cinnost/"]:hover
+  //padding-top: 0.2em
+  color: white
+  //&[href^="cinnost/"]:hover
    color: $cinnostFarba
-  &[href^="projekty/"]:hover
+  // &[href^="projekty/"]:hover
    color: $projektyFarba
-  &[href^="clanky/"]:hover
+  // &[href^="clanky/"]:hover
    color: $clankyFarba
-  &[href^="udalosti/"]:hover
-   color: $udalostiFarba
+  // &[href^="udalosti/"]:hover
+  //  color: $udalostiFarba
+
+
+.c-sidebar__linkMinor:hover,
+.c-sidebar__linkMaior:hover
+  color: white

@@ -3,8 +3,10 @@ mixin galleriesItem(src, alt, name, description, href)
     img(src= src, alt= alt)
     a(href=href)
       figcaption.galleriesItem__figcaption
-        h3.galleriesItem__name= name
-        p.galeriesItem__description= description
+        .galleriesItem_centeringName
+          h3.galleriesItem__name= name
+        .galleriesItem_centeringBtn
+          p.galeriesItem__description= description
 
 
 section

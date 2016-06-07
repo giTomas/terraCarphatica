@@ -2,6 +2,7 @@
 layout: default-news
 ---
 
+
 {% include page_header.html %}
 
 <main class="newsSubsite">
@@ -9,7 +10,7 @@ layout: default-news
     <h2 class="newsSubsite__title">{{ page.title }}</h2>
     <h3 class="newsSubsite__date">{{ page.date | date: "%d/%m/%Y" }}</h3>
     <div class="newsSubsite__content">
-      {{page.content}}
+        {% include blog1.html %}
     </div>
   </div>
 </main>

@@ -6,13 +6,17 @@
 @import "1-base/base";
 
 @import "2-layout/layout";
+@import "3-module/typografia";
 @import "3-module/header";
+@import "3-module/banner";
 @import "3-module/footer";
 @import "3-module/aktuality2";
 @import "3-module/coworkers";
 //@import "3-module/experiment";
 @import "3-module/sidebar";
 @import "3-module/photogalleries";
+@import "3-module/members";
 
 @import "3-module/newsCompleteList";
+@import "3-module/modal";
 @import "4-state/state";

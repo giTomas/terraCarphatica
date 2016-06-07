@@ -1,19 +1,37 @@
+.modal-is-hidden
+  display: none
+
+.modal-is-visible
+  opacity: 1
+
+.modal-opacity
+  opacity: 0.9
+
+.modal-img-in-position
+  transform: translate3d(-50%, -50%, 0)
+
+.modal-img-sliding-out
+  transform: translate3d( 200%, -50%, 0)
+
 .nav-search-is-ready
   //transform: scaleY(1)
   visibility: visible
   opacity: 1
 
-.border-is-visible
+.border-is-hidden
   //border-bottom: 0.5em solid $aktualityFarba
 
-.sidebar-is-fixed
+.member-is-visible
+  opacity: 1
+
+//.sidebar-is-fixed
   position: fixed
   z-index: 99
   box-shadow: 1px 0 3px rgba(grey, 0.9)
   top: 0
   bottom: 0
   left: 0
-  background-color: $backgroundColor
+  //background-color: $backgroundColor
   height: 100vh
   .sidebar__title
     transition: opacity 0.5s linear 0s
